@@ -1,0 +1,134 @@
+//tienda
+
+.tienda{
+    .filters{
+        padding: 0 20px 30px 30px;
+        a{
+            color: rgb(134, 130, 132);
+            font-size: 1.3em;
+            text-decoration: none;
+            margin-bottom: 4px;
+            text-transform: lowercase;
+            &:hover{
+                color: $mainColor;
+            }
+        }
+        span{
+            display: block;
+            color: rgb(0, 0, 0);
+            margin: 10px 0;
+            letter-spacing: 1px;
+        }
+        select{
+            color: darkred;
+            border: none;
+            background-color: white;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        li{
+            padding-left: 10px;
+            list-style: none;
+        }
+    }
+    .actions{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        button{
+            margin-left: 10px;
+            background-color: darkred;
+            color: white;
+            padding: 6px;
+            border: none;
+            border-radius: 3px;
+        }
+        input{
+            padding: 6px;
+            border-radius: 3px;
+            border: none;
+            background-color: rgb(243, 245, 245);
+        }
+    }
+}
+
+
+
+
+.tienda{
+    /* 
+    - creamos nuestro grid de 3 cols 20% - 1fr - 1fr y 4 rows 80px - 3 x 300px 
+    - difinimos las areas
+    - setteamos el gap en 5px
+    */
+    display: grid;
+    grid-template-columns: 20% repeat(2,1fr);
+    grid-template-rows: 80px repeat(3,300px);
+    grid-template-areas: 
+    "actions actions actions" 
+    "filters uno uno" 
+    "filters dos tres"
+    "filters dos cuatro";
+    gap: 5px;
+}
+
+    .tienda section{
+        border-radius: 10px;
+    }
+
+    .tienda .actions{
+        /* background-color: rgb(244, 241, 241);  */
+        padding: 0 30px;
+        /*definimos el nombre en el grid */
+        grid-area: actions;
+    }
+
+    .tienda .filters{
+        /*definimos el nombre en el grid */
+        grid-area: filters;
+    }
+
+    .tienda .prod1{
+        /*
+        - definimos el nombre en el grid
+        - usamos flex para acomodar 
+        */
+        grid-area: uno;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .tienda .prod2{
+        /*
+        - definimos el nombre en el grid
+        - usamos flex para acomodar 
+        */
+       grid-area: dos;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .tienda .prod3{
+        /*
+        - definimos el nombre en el grid
+        - usamos flex para acomodar 
+        */
+        grid-area: tres;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tienda .prod4{
+        /*
+        - definimos el nombre en el grid
+        - usamos flex para acomodar 
+        */
+        grid-area: cuatro;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }

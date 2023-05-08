@@ -1,0 +1,41 @@
+//nesting - anidacion
+.botonera{
+    background-color: $mainColor;
+    ul{
+        li{
+            margin-left: 5px;
+            a{
+                color: #e7c55f;
+                font-size: $textMd;
+                /*Subrayado animado*/
+			  	background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+                  &:hover{
+                    color:#e7c55f;
+                    /*Subrayado animado*/
+                    background-size: 100% 2px;
+                  }
+            }
+        }
+    }
+    img{
+        width: 150px;
+        @media (width < 320px){
+            width: 100px;
+        }
+    }
+}
+
+//ejemplo del uso de BEM con sass
+.noticias{
+    background-color: red;
+    &__heading{
+        color: $mainColor;
+        &--sm{
+            font-size: $textSm;
+        }
+    }
+}

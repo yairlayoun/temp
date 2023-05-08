@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+        <title>Mercado Medieval - Eventos</title>
+        <!-- css BS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <!-- mi css -->
+        <link rel="stylesheet" href="../css/main.css">
+      </head>
+      <body>
+        <div class="py-2 text-center text-secondary bg-white">
+          25% de descuento los jueves
+      </div>
+        <!-- inicia nav -->
+        <nav class="navbar navbar-expand-lg botonera sticky-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <!-- va el logo -->
+              <img src="../img/logo.png" alt="Logo de Mercado Medieval">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- aca va el btn hamburguesa -->
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- aca se cambia la dire de la ul -->
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/Eventos.html">Eventos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Armas y Armaduras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/Contactanos.html">Contactanos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    <!-- ends nav -->
+    <main class="tienda">
+        <div class="actions">
+            <form action="">
+                <input type="text" placeholder="buscar">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </button>
+            </form>
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+            </button>
+        </div>
+        <!-- ends second nav -->
+        <section class="filters">
+            <form>
+                <select name="categorias">
+                    
+                    <option value="armas">Armas</option>
+                    <option value="escudos">Armaduras</option>
+                    <option value="miscelaneo">Misceláneo</option>
+                </select>
+                <span><b>Tipo de armas</b></span>
+                <ul>
+                    <li>
+                        <a href="#"> Alabardas (8)</a>
+                    </li>
+                    <li>
+                        <a href="#">Arcos (5)</a>
+                    </li>
+                    <li>
+                        <a href="#">Espadas (20)</a>
+                    </li>
+                    <li>
+                        <a href="#">Hachas (8)</a>
+                    </li>
+                    <li>
+                        <a href="#">Martillos (13)</a>
+                    </li>
+                    <li>
+                        <a href="#">Lanzas (9)</a>
+                    </li>
+
+                </ul>
+                <span><b>TAMAÑO</b></span>
+                <div>
+                    <label for="chico">SM</label>
+                    <input type="checkbox" id="chico">
+                </div>
+                <div>
+                    <label for="mediano">MD</label>
+                    <input type="checkbox" id="mediano">
+                </div>
+                <div>
+                    <label for="grande">LG</label>
+                    <input type="checkbox" id="grande">
+                </div>
+            </form>
+        </section>
+        <!-- ends filters -->
+        <section class="prod1 bg-gris">
+            <img src="../img/productos/Uchigatana.png" alt="">
+            <p></p>
+        </section>
+        <!-- ends prod 1 -->
+        <section class="prod2 bg-gris">
+            <img src="../img/productos/Grant.png" alt="">
+            <p></p>
+        </section>
+        <!-- ends prod 2 -->
+        <section class="prod3 bg-gris">
+            <img src="../img/productos/Espadon_Caballero_Negro.png" alt="">
+        </section>
+        <!-- ends prod 3 -->
+        <section class="prod4 bg-gris">
+            <img src="../img/productos/Arco_grande_del_Asesino_de_dragones_29.png" alt="">
+        </section>
+        
+        <!-- ends prod 4 -->
+    </main>
+    <!-- ends main -->
+    <footer>
+        <div class="d-flex">
+
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="../img/icons/facebook.svg" alt="Seguinos en Facebook"  
+              width="32" 
+            height="32" </img>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <img src="../img/icons/twitter.svg" alt="Seguinos en Twitter"
+              width="32" 
+              height="32" </img>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="../img/icons/instagram.svg" alt="Seguinos en instagram"
+              width="32"
+              height="32"
+              style="padding-left:2px";
+             </a>
+        </div>
+
+
+        <div>
+            <a href="#">Terminos y condiciones</a>
+            <a href="#">Franquicias</a>
+            <a href="../pages/Quienes-somos.html">Quienes somos</a> 
+        </div>
+    </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>

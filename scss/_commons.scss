@@ -1,0 +1,100 @@
+*{
+    font-family: "Merriweather", serif;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3{
+    color:$mainColor;
+    font-weight: $fontRegular;
+}
+
+h1{
+    font-size: $textLg;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 1.6em;
+}
+
+h3{
+    font-size: 1.8em;
+}
+
+p{
+    color: $secondaryColor;
+    font-size: 1.4em;
+    line-height: 1.8em;
+    padding: 0 20px;
+    font-weight: $fontLight;
+}
+
+label{
+    color: $mainColor;
+}
+
+.bg-pink{
+    background-color: lightgray;
+}
+.bg-darkred{
+    background-color:$mainColor;
+}
+
+.text-darkred{
+    color: $mainColor;
+}
+
+.bg-pattern{
+    background-image: url(../img/backgrounds/red-vintage-fabric.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.linkMore{
+    color: $mainColor;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+
+.contenedor{
+    width: 90%;
+    height:auto;
+    margin: 20px auto;
+    padding: 10px 50px;
+    overflow-y: auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+footer{
+    padding: 20px 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(224, 226, 226);
+    svg{
+        fill:darkred;
+        width: 30px;
+        margin-right: 10px;
+    }
+    a{
+        text-decoration: none;
+        display: block;
+        color: darkred;
+        font-size: 0.8rem;
+        margin-bottom: 4px;
+    }
+}
+
+// p{
+//     @include textos(1.1em,10px,black )
+// }
+// h1{
+//     @include textos(3em,20px, $mainColor)
+// }
