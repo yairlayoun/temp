@@ -19,7 +19,7 @@
 .card {
     position: relative;
     width: 400px;
-    height: 400px;
+    // height: 400px;
     transform-style: preserve-3d; /* Permite que los hijos se transformen en 3D */
     transition: transform 0.5s ease; /* Transición al girar la card */
   }

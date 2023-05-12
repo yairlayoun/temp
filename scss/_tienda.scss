@@ -88,15 +88,23 @@
         grid-area: filters;
     }
 
-    .tienda .prod1{
+    .tienda .prod{
         /*
         - definimos el nombre en el grid
         - usamos flex para acomodar 
         */
-        grid-area: uno;
+        // grid-area: uno;
+        // display: flex;
+        // justify-content: flex-start;
+        // align-items: center;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 550px;
+        .prod img{
+            margin-bottom: 10px;
+    }
     }
 
     .tienda .prod2{
