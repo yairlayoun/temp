@@ -126,8 +126,9 @@
   margin-left: 5px;
 }
 .botonera ul li a {
-  color: white;
+  color: #e7c55f;
   font-size: 1em;
+  /*Subrayado animado*/
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
   background-repeat: no-repeat;
@@ -135,7 +136,8 @@
   transition: background-size 0.3s;
 }
 .botonera ul li a:hover {
-  color: white;
+  color: #e7c55f;
+  /*Subrayado animado*/
   background-size: 100% 2px;
 }
 .botonera img {
@@ -158,6 +160,7 @@
 }
 
 * {
+  font-family: "Merriweather", serif;
   box-sizing: border-box;
 }
 
@@ -194,19 +197,19 @@ label {
 }
 
 .bg-pink {
-  background-color: rgb(244, 212, 229);
+  background-color: lightgray;
 }
 
-.bg-deep {
+.bg-darkred {
   background-color: darkred;
 }
 
-.text-deep {
+.text-darkred {
   color: darkred;
 }
 
 .bg-pattern {
-  background-image: url(../img/backgrounds/bubble.png);
+  background-image: url(../img/backgrounds/red-vintage-fabric.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -250,41 +253,47 @@ footer a {
   margin-bottom: 4px;
 }
 
-.productos {
-  padding: 0 30px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+/* section productos */
+.productos{
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.productos figure {
-  width: 30%;
-  border-radius: 4px;
-  border: solid gray 1px;
-  margin-bottom: 20px;
-}
-.productos figure p {
-  font-size: 1rem;
-  line-height: 1.2rem;
-  margin: 20px 0;
-  text-align: left;
-}
-.productos figure img {
-  width: 100%;
-}
-.productos figure figcaption {
-  color: darkred;
-  font-size: 2.3rem;
-  margin-top: 10px;
-}
-.productos figure button {
-  border: solid;
-  background-color: darkred;
-  color: white;
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 20px;
-}
+
+    .productos figure{
+        width: 30%;
+        border-radius: 4px;
+        border: solid gray 1px;
+        margin-bottom: 20px;
+    }
+
+        .productos figure p{
+            font-size: 1rem;
+            line-height: 1.2rem;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .productos figure img{
+            width: 100%;
+        }
+
+        .productos figure figcaption{
+            color: darkred;
+            font-size: 2.3rem;
+            margin-top: 10px;
+        }
+
+        .productos figure button{
+            border: solid;
+            background-color: darkred;
+            color: white;
+            border-radius: 8px;
+            padding:10px ;
+            margin-bottom: 20px;
+        }
 
 .tienda .filters {
   padding: 0 20px 30px 30px;
@@ -365,15 +374,19 @@ footer a {
   grid-area: filters;
 }
 
-.tienda .prod1 {
+.tienda .prod {
   /*
   - definimos el nombre en el grid
   - usamos flex para acomodar 
   */
-  grid-area: uno;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 550px;
+}
+.tienda .prod .prod img {
+  margin-bottom: 10px;
 }
 
 .tienda .prod2 {
@@ -427,18 +440,17 @@ footer a {
     background-image: url(../img/headers/header5.jpg);
   }
 }
-.header-animado {
+.header-animated {
   height: 50vh;
   background-size: cover;
   animation-name: animatedHeader;
-  animation-duration: 15s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
 }
 
 .card {
   position: relative;
   width: 400px;
-  height: 400px;
   transform-style: preserve-3d; /* Permite que los hijos se transformen en 3D */
   transition: transform 0.5s ease; /* Transición al girar la card */
 }
@@ -462,3 +474,27 @@ footer a {
 .card:hover {
   transform: rotateY(180deg); /* Gira la card 180 grados al hacer hover */
 }/*# sourceMappingURL=main.css.map */
+
+@media (width < 768px){
+/* index */
+.productos figure{
+    width: 100%;
+}
+
+    .productos figure p{
+        padding: 0 20px;
+        font-size: 1em;
+    }
+
+    .productos figure img{
+        width: 50%;
+    }
+
+    .productos figure button{
+        width: 90%;
+    }
+p{
+    font-size: 2em;
+    padding: 0 10px;
+}
+}
