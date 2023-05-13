@@ -59,8 +59,11 @@ label{
 // cursor: revert-layer;
 // cursor: unset;
 
+.btn:hover{
+    background-color: red;
+   }
 
-.bg-pink{
+.bg-gray{
     background-color: lightgray;
 }
 .bg-darkred{
@@ -115,11 +118,7 @@ footer{
         font-size: 0.8rem;
         margin-bottom: 4px;
     }
-}
 
-// p{
-//     @include textos(1.1em,10px,black )
-// }
-// h1{
-//     @include textos(3em,20px, $mainColor)
-// }
+
+      
+}
