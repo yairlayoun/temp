@@ -1,5 +1,5 @@
 {
-  "name": "Armas-y-Armaduras",
+  "name": "armas-y-armaduras",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -13,5 +13,6 @@
     "normalize.css": "^8.0.1",
     "sass": "^1.62.1"
   },
+  "devDependencies": {},
   "description": ""
 }

@@ -66,14 +66,6 @@
 }
 
 
-// div{
-//     @include flex1(row,center, center, nowrap);
-// }
-
-// .box{
-//     @include flex1(row-reverse, flex-end,flex-start, wrap);
-// }
-
 
 //maps
 $paleta:(
@@ -84,10 +76,6 @@ $paleta:(
     'cinco': #dd9d64,
 )
 
-// p{
-//     color:map-get($map: $paleta, $key: 'doce');
-//     box-shadow: map-get($map: $paleta, $key:'once' );
-// }
 
 
 // math
@@ -97,26 +85,15 @@ $paleta:(
 	background-color: grey;
 }
 
-// // // condicionales 
-// .icon-lang{
-// 	width: 50px;
-// 	height: 50px;
-// 	background-size:contain;
-// 	background-position:center;
-// 	@if $lang == es {background-image: url(../img/icons/icono-es.jpg)}
-// 	@else if $lang == en {background: url(../img/icons/icono-en.jpg)}
-// 	@else if $lang == fr {background: url(../img/icons/icono-fr.jpg)}
-// 	@else{background: url(../img/icons/icono-any.jpg)};
-// }
 
-// // bucles
+
 @for $i from 1 through 6{
 	.text-#{$i}{
 		font-size: .25em *$i;
 	}
 }
 
-// // bucle evolucionado
+
 @each $icono in facebook, twitter, instagram{
 	.#{$icono}-icon{
 		background-image:url(../img/icons/#{$icono}.svg);

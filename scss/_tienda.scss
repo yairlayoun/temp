@@ -56,11 +56,7 @@
 
 
 .tienda{
-    /* 
-    - creamos nuestro grid de 3 cols 20% - 1fr - 1fr y 4 rows 80px - 3 x 300px 
-    - difinimos las areas
-    - setteamos el gap en 5px
-    */
+
     display: grid;
     grid-template-columns: 20% repeat(2,1fr);
     grid-template-rows: 80px repeat(3,300px);
@@ -70,6 +66,15 @@
     "filters dos tres"
     "filters dos cuatro";
     gap: 5px;
+
+    @media (width < 768px) {
+
+        .tienda{
+            display: flex;
+            flex-direction: column;}
+    
+      } 
+    
 }
 
     .tienda section{
@@ -77,26 +82,15 @@
     }
 
     .tienda .actions{
-        /* background-color: rgb(244, 241, 241);  */
         padding: 0 30px;
-        /*definimos el nombre en el grid */
         grid-area: actions;
     }
 
     .tienda .filters{
-        /*definimos el nombre en el grid */
         grid-area: filters;
     }
 
     .tienda .prod{
-        /*
-        - definimos el nombre en el grid
-        - usamos flex para acomodar 
-        */
-        // grid-area: uno;
-        // display: flex;
-        // justify-content: flex-start;
-        // align-items: center;
         display: flex;
         width: 100%;
         justify-content: center;
@@ -108,10 +102,6 @@
     }
 
     .tienda .prod2{
-        /*
-        - definimos el nombre en el grid
-        - usamos flex para acomodar 
-        */
        grid-area: dos;
        display: flex;
        flex-direction: column;
@@ -120,10 +110,7 @@
     }
 
     .tienda .prod3{
-        /*
-        - definimos el nombre en el grid
-        - usamos flex para acomodar 
-        */
+
         grid-area: tres;
         display: flex;
         justify-content: center;
@@ -131,10 +118,7 @@
     }
 
     .tienda .prod4{
-        /*
-        - definimos el nombre en el grid
-        - usamos flex para acomodar 
-        */
+
         grid-area: cuatro;
         display: flex;
         justify-content: center;

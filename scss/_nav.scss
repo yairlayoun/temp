@@ -7,15 +7,13 @@
             a{
                 color: #e7c55f;
                 font-size: $textMd;
-                /*Subrayado animado*/
 			  	background-image: linear-gradient(currentColor, currentColor);
                 background-position: 0% 100%;
                 background-repeat: no-repeat;
                 background-size: 0% 2px;
-                transition: background-size .3s;
+                transition: background-size .5s;
                   &:hover{
                     color:#e7c55f;
-                    /*Subrayado animado*/
                     background-size: 100% 2px;
                   }
             }
@@ -29,7 +27,6 @@
     }
 }
 
-//ejemplo del uso de BEM con sass
 .noticias{
     background-color: red;
     &__heading{
